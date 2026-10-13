@@ -1,0 +1,72 @@
+title: How to remove a video background without a green screen
+slug: remove-video-background-without-green-screen
+date: 2026-10-14
+category: Masking and roto
+read: 7
+description: AI masking can cut out a subject without a green screen if you shoot for contrast and fix the edges where it fails.
+---
+<p class="short"><strong>Short version.</strong> AI masking works best when the subject and the background look different in color and light. Shoot for that contrast, let the tool make the first mask, then fix only the frames where the edges break, usually hair, hands, and fast movement.</p>
+
+<h2>What AI masking does well and badly</h2>
+<p>The tools are good at a single person in front of a plain or distant background, with a steady camera. They struggle when the picture itself makes the job hard.</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr><th>Usually fine</th><th>Usually a problem</th></tr>
+</thead>
+<tbody>
+<tr><td>One person, steady camera</td><td>Fast movement and motion blur</td></tr>
+<tr><td>Clear contrast with the background</td><td>Hair against a similar color</td></tr>
+<tr><td>Solid clothing and clean edges</td><td>Glasses, glass, smoke, and other see-through objects</td></tr>
+<tr><td>Sharp footage</td><td>Hands crossing in front of the body, or two people touching</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Tools that can do it</h2>
+<ul>
+<li>DaVinci Resolve Studio has Magic Mask.</li>
+<li>Adobe After Effects has Roto Brush, and Premiere Pro has an Object Mask tool.</li>
+<li>Runway offers AI background removal for video in the browser.</li>
+<li>CapCut includes background removal for quick social edits.</li>
+</ul>
+<p class="note">Features, limits, and prices change often. Check the current version before you pick a tool for paid work.</p>
+
+<h2>Shoot it so the mask is easy</h2>
+<ul>
+<li>Light the subject separately from the background so the edges are clear.</li>
+<li>Keep some distance between the subject and the wall behind them.</li>
+<li>Avoid clothes and hair that match the background color.</li>
+<li>Keep the footage sharp. If the subject moves a lot, use a faster shutter speed so frames are less blurry.</li>
+</ul>
+
+<h2>The workflow</h2>
+<ol>
+<li><strong>Trim first.</strong> Cut the clip down to the part you will use. Masking footage you will throw away wastes time, and in some tools it also uses up credits.</li>
+<li><strong>Make the first mask on a clean frame.</strong> Pick a frame where the whole subject is visible and the pose is simple, then track forward.</li>
+<li><strong>Scrub through at half speed.</strong> Watch the edges, not the subject. Flicker and chopped hair show up here.</li>
+<li><strong>Fix the bad frames only.</strong> Add points to the mask on the frames that fail, or split the clip at the problem and treat it separately.</li>
+<li><strong>Refine the edge.</strong> A feather of a pixel or two at 1080p softens the cutout. Shrink the mask slightly if you see a thin halo of the old background.</li>
+<li><strong>Test on the real background early.</strong> A mask that looks fine over gray can look wrong over a bright scene.</li>
+<li><strong>Match the look.</strong> Match brightness, contrast, and color temperature between the subject and the new background. A soft edge blur or light wrap, if your tool has it, helps the subject sit in the scene.</li>
+<li><strong>Export a short test</strong> and watch it full screen before you render the whole thing.</li>
+</ol>
+
+<h2>Common problems and fixes</h2>
+<div class="table-scroll">
+<table>
+<thead>
+<tr><th>Problem</th><th>What to try</th></tr>
+</thead>
+<tbody>
+<tr><td>Edges flicker from frame to frame</td><td>Track again with a lower sensitivity, add a small feather, or use the temporal smoothing option if the tool has one.</td></tr>
+<tr><td>A halo of the old background</td><td>Shrink the mask a little and reduce color spill from the old background.</td></tr>
+<tr><td>Hair looks chopped off</td><td>Use the tool's hair or edge refine option, or keep a little of the original background and blur it.</td></tr>
+<tr><td>Hands disappear</td><td>Make a separate mask for the hands and combine it with the main one.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>When to use a green screen anyway</h2>
+<p>For client work with a deadline, lots of hair, or see-through objects, a green screen is still the safer choice. A piece of green cloth and some lighting can save hours of cleanup. AI masking is best when you are working with footage that is already shot, or when a green screen is not an option.</p>
+<p>If the footage has audio problems too, clean those up first with the steps in <a href="/articles/fix-noisy-voice-recordings/">fixing a noisy voice recording</a>.</p>
