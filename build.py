@@ -23,7 +23,7 @@ SITE = {
     "url": "https://cutlist-site-seven.vercel.app",          # your real domain, no trailing slash
     "tagline": "Practical AI workflows for video editors",
     "author": "Muhammad Ammaz Khan",
-    "email": "hello@example.com",          # a real inbox on your domain
+    "email": "ammazk574@gmail.com",          # a real inbox on your domain
     "gsc_verification": "x73pPgeSF_Xl-0qd0x9FQAvNFYKBgqs2erTkKv7tn8Q",
     "adsense_client": "",                  # example: "ca-pub-1234567890123456"
 }
