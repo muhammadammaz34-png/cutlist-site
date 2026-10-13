@@ -1,0 +1,60 @@
+title: How to fix a noisy voice recording before you start editing
+slug: fix-noisy-voice-recordings
+date: 2026-10-14
+category: Audio cleanup
+read: 6
+description: A simple order of steps for cleaning dialogue with AI noise reduction, and the mistakes that make a voice sound fake.
+---
+<p class="short"><strong>Short version.</strong> Clean the audio once, on the original file, before you cut. Use AI noise reduction at a medium setting, check the result on two kinds of speakers, then put a little room tone back under the dialogue so the voice does not sound cut out of the room.</p>
+
+<h2>Start with the right file</h2>
+<p>AI cleanup tools work best on the original recording. A video that has already been compressed and uploaded somewhere has lost detail the tool needs, so ask for the source audio whenever you can.</p>
+<p>Clean the full clip before you cut it up. That keeps the noise level the same across every cut, and you avoid one shot sounding different from the next.</p>
+
+<h2>Know what kind of noise you have</h2>
+<p>Different problems need different fixes. Listen to the clip on headphones and match it to the table before you pick a tool.</p>
+<div class="table-scroll">
+<table>
+<thead>
+<tr><th>What you hear</th><th>What usually helps</th></tr>
+</thead>
+<tbody>
+<tr><td>Constant hiss, a fan, or an air conditioner</td><td>AI noise reduction works well here. Start at a medium setting.</td></tr>
+<tr><td>Low rumble or wind</td><td>Apply a high-pass filter first, then noise reduction.</td></tr>
+<tr><td>Echo from an empty room</td><td>Dereverb tools help a little. Results vary a lot, so judge by ear.</td></tr>
+<tr><td>Traffic, a crowd, or music behind the voice</td><td>Voice isolation tools. Listen for a watery, underwater sound on S and T.</td></tr>
+<tr><td>Distortion from a recording that was too loud</td><td>Very hard to fix. Re-record if you can.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Tools that clean dialogue</h2>
+<p>Most editors now include a speech cleanup feature, so you may not need a separate tool.</p>
+<ul>
+<li>Adobe Premiere Pro has Enhance Speech, and Adobe Podcast offers a web version of the same idea.</li>
+<li>DaVinci Resolve Studio has Voice Isolation. It is part of the paid Studio version, not the free one.</li>
+<li>Descript has Studio Sound, which fits well if you also edit by transcript.</li>
+</ul>
+<p class="note">Feature names, limits, and prices change often. Check the tool's current page before you subscribe.</p>
+
+<h2>The order that works</h2>
+<ol>
+<li>Duplicate the original audio track so you can switch back and compare.</li>
+<li>Add a high-pass filter somewhere around 70 to 80 Hz to remove rumble. Voices rarely need anything below that.</li>
+<li>Run the AI noise reduction or voice isolation. Start at a medium strength, not the maximum.</li>
+<li>Listen on headphones, then on a phone speaker. A fix that sounds fine in one place can sound strange in the other.</li>
+<li>Lay a few seconds of the room's own quiet under the dialogue at a very low level. This is called room tone, and it stops the gaps between sentences from sounding dead.</li>
+<li>Set the loudness last. Most online platforms normalize around -14 LUFS, and dialogue-led videos commonly sit between -14 and -16.</li>
+</ol>
+
+<h2>Mistakes that make a voice sound fake</h2>
+<ul>
+<li><strong>Running the effect at full strength.</strong> Breaths disappear and S sounds turn watery.</li>
+<li><strong>Stacking two tools.</strong> Cleaning twice usually adds more damage than it removes noise.</li>
+<li><strong>Leaving complete silence between lines.</strong> Real rooms are never silent. Room tone fixes this.</li>
+<li><strong>Checking on one pair of headphones only.</strong> Always test on a second playback device.</li>
+</ul>
+
+<h2>When to re-record instead</h2>
+<p>If the voice is distorted, or the noise is another person talking, no tool will fully fix it. A few pickup lines recorded later are usually cheaper than hours of repair work, and they sound better.</p>
+<p>Once the audio is clean, the next job is usually text on screen. See <a href="/articles/make-accurate-captions-with-ai/">how to make accurate captions with AI</a>, since clean audio also gives you a more accurate transcript.</p>
