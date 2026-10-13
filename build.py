@@ -1,9 +1,4 @@
-{gsc}{robots}<link rel="canonical" href="{esc(canonical)}">    gsc = ""
-    if SITE.get("gsc_verification"):
-        gsc = f'<meta name="google-site-verification" content="{esc(SITE["gsc_verification"])}">\n'
-
-    ads = ""    "gsc_verification": "x73pPgeSF_Xl-0qd0x9FQAvNFYKBgqs2erTkKv7tn8Q",
-    "adsense_client": "",                  # example: "ca-pub-1234567890123456"#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Builds the Cutlist static site into ./dist
 
 Usage:  python3 build.py
@@ -29,6 +24,7 @@ SITE = {
     "tagline": "Practical AI workflows for video editors",
     "author": "Muhammad Ammaz Khan",
     "email": "hello@example.com",          # a real inbox on your domain
+    "gsc_verification": "x73pPgeSF_Xl-0qd0x9FQAvNFYKBgqs2erTkKv7tn8Q",
     "adsense_client": "",                  # example: "ca-pub-1234567890123456"
 }
 # ----------------------------------------------------------------------------
@@ -124,6 +120,10 @@ def layout(path, title, description, body, *, full_title=None, article=None,
     canonical = SITE["url"] + path
     robots = '<meta name="robots" content="noindex">\n' if noindex else ""
 
+    gsc = ""
+    if SITE.get("gsc_verification"):
+        gsc = f'<meta name="google-site-verification" content="{esc(SITE["gsc_verification"])}">\n'
+
     ads = ""
     if SITE["adsense_client"]:
         ads = (
@@ -165,7 +165,7 @@ def layout(path, title, description, body, *, full_title=None, article=None,
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(page_title)}</title>
 <meta name="description" content="{esc(description)}">
-{robots}<link rel="canonical" href="{esc(canonical)}">
+{gsc}{robots}<link rel="canonical" href="{esc(canonical)}">
 <meta name="theme-color" content="#F4F5F7">
 <meta property="og:site_name" content="{esc(SITE['name'])}">
 <meta property="og:title" content="{esc(page_title)}">
