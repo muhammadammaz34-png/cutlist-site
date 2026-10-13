@@ -1,4 +1,9 @@
-#!/usr/bin/env python3
+{gsc}{robots}<link rel="canonical" href="{esc(canonical)}">    gsc = ""
+    if SITE.get("gsc_verification"):
+        gsc = f'<meta name="google-site-verification" content="{esc(SITE["gsc_verification"])}">\n'
+
+    ads = ""    "gsc_verification": "x73pPgeSF_Xl-0qd0x9FQAvNFYKBgqs2erTkKv7tn8Q",
+    "adsense_client": "",                  # example: "ca-pub-1234567890123456"#!/usr/bin/env python3
 """Builds the Cutlist static site into ./dist
 
 Usage:  python3 build.py
