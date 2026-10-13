@@ -20,7 +20,7 @@ OUT = ROOT / "dist"
 # ---- Edit these before you publish ----------------------------------------
 SITE = {
     "name": "Cutlist",
-    "url": "https://example.com",          # your real domain, no trailing slash
+    "url": "https://cutlist-site-seven.vercel.app",          # your real domain, no trailing slash
     "tagline": "Practical AI workflows for video editors",
     "author": "Muhammad Ammaz Khan",
     "email": "hello@example.com",          # a real inbox on your domain
